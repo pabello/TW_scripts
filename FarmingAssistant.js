@@ -1,12 +1,5 @@
-javascript:
 // Farming assistant - currently works for #1 pack containing light and #2 pack containing axe, both packs contain scouts
 (function (){$("a.farm_icon_c, a.farm_icon_b, a.farm_icon_a").click(function() {$(this).closest("tr").remove();});})();
-
-function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min)) + min;
-}
 
 (function () {
     var scout_in_light_pack = parseInt(document.getElementsByClassName("vis")[1].getElementsByTagName("td")[5].getElementsByTagName("input")[0].value);
@@ -42,3 +35,9 @@ function getRandomInt(min, max) {
     
     }, getRandomInt(520, 550));
 })();
+
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min)) + min;
+}
