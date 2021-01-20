@@ -1,3 +1,4 @@
+javascript:
 // Farming assistant - currently works for #1 pack containing light and #2 pack containing axe, both packs contain scouts
 (function (){$("a.farm_icon_c, a.farm_icon_b, a.farm_icon_a").click(function() {$(this).closest("tr").remove();});})();
 
